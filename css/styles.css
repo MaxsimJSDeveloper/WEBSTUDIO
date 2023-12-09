@@ -207,7 +207,6 @@ button {
   display: block;
   margin: 0 auto;
   background-color: #2e2f42;
-  padding: 72px 16px;
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
@@ -217,17 +216,14 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 320px;
 }
 
 .name {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 72px;
   text-align: center;
   color: #ffffff;
-  max-width: 288px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -273,13 +269,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 72px;
-}
-
-.content-list-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .section-title-third {
@@ -376,11 +365,6 @@ button {
 }
 
 /*======================================== OUR PORTFOLIO ============================*/
-
-.overlay-text {
-  display: none;
-}
-
 .our-portfolio-title {
   color: #2e2f42;
   text-align: center;
@@ -536,6 +520,9 @@ button {
   letter-spacing: 0.04em;
   padding-left: 16px;
   color: #ffffff;
+
+  opacity: 0.3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .form-input::placeholder {
@@ -767,28 +754,66 @@ input:checked + .check-label-text > .check-board {
     padding-top: 16px;
     padding-bottom: 16px;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .mobile-menu-open-btn {
-    display: none;
-  }
-}
-
-/* ================== TABLET ====================== */
-@media screen and (min-width: 768px) {
-  .mobile-menu-open-btn {
-    display: none;
-  }
 
   .section-name {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/tablet/tablet-dark-bg.jpg);
-    min-width: 768px;
+    padding: 72px 16px;
+    max-width: 320px;
+  }
+
+  .name {
+    max-width: 288px;
+    margin-bottom: 72px;
+  }
+
+  .content-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* ====================== TABLET AND DECKTOP ================== */
+@media screen and (min-width: 768px) {
+  .mobile-menu-open-btn {
+    display: none;
+  }
+
+  .name {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+
+  .current {
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link.current::after {
+    height: 4px;
+    border-radius: 2px;
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: block;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+  }
+}
+
+/* ======================================= TABLET ================================================ */
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .mobile-menu-open-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
   }
 
   .container {
@@ -829,6 +854,7 @@ input:checked + .check-label-text > .check-board {
   }
 
   .nav-link {
+    display: block;
     color: #2e2f42;
     padding: 24px 0;
     color: #2e2f42;
@@ -836,26 +862,6 @@ input:checked + .check-label-text > .check-board {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-  }
-
-  .current {
-    position: relative;
-    color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .nav-link.current::after {
-    height: 4px;
-    border-radius: 2px;
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    display: block;
-    bottom: -1px;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
   }
 
   /* =========================== ADDRESS ======================== */
@@ -869,7 +875,6 @@ input:checked + .check-label-text > .check-board {
     display: flex;
     gap: 12px;
     flex-direction: column;
-    padding: 16px;
   }
 
   .address-link {
@@ -881,17 +886,37 @@ input:checked + .check-label-text > .check-board {
     letter-spacing: 0.04em;
   }
 
-  .name {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 36px;
-    max-width: 496px;
-    text-align: center;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
+  /* ==================== NAME ========================== */
+  .section-name {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/tablet-dark-bg.jpg);
+    min-width: 768px;
+    padding: 112px 0;
   }
 
+  .name {
+    margin-bottom: 36px;
+    max-width: 496px;
+  }
+
+  @media screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px),
+    screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .section-name {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/tablet/tablet-dark-bg@2x.jpg');
+    }
+  }
+
+  /* ============================ CONTENT ================== */
   .content-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -901,10 +926,10 @@ input:checked + .check-label-text > .check-board {
   .content-list-item {
     flex-basis: calc((100% - 24px) / 2);
     font-size: 32px;
-    display: flex;
     align-items: flex-start;
   }
 
+  /* ============================ OUR TEAM ================ */
   .our-team-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -917,6 +942,7 @@ input:checked + .check-label-text > .check-board {
     width: 264px;
   }
 
+  /* ===================== OUR PORTFOLIO ====================== */
   .our-portfolio-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -938,6 +964,7 @@ input:checked + .check-label-text > .check-board {
     letter-spacing: 0.02em;
   }
 
+  /* ======================= FOOTER ========================== */
   .logotipe-footer {
     display: flex;
     justify-content: flex-start;
@@ -968,5 +995,221 @@ input:checked + .check-label-text > .check-board {
   .modal-window-icon-conteiner {
     width: 408px;
     height: 584px;
+  }
+}
+
+@media screen and (max-width: 1158px) {
+  .overlay-text {
+    display: none;
+  }
+}
+/* ============================================= DESCTOP ============================================ */
+@media screen and (min-width: 1158px) {
+  .mobile-menu-open-btn {
+    display: none;
+  }
+
+  .container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .section-indentation {
+    padding: 120px 0;
+  }
+
+  /* ========================== HEADER ====================== */
+
+  /* =================== NAV ========================= */
+
+  .page-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 332px;
+  }
+
+  .menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav-link {
+    color: #2e2f42;
+    padding: 24px 0;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #404bbf;
+  }
+
+  /* ==================== ADDRESS ======================== */
+  .page-address {
+    display: flex;
+    letter-spacing: 0.02em;
+    font-style: normal;
+  }
+
+  .address-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .address-list-item {
+    padding: 24px 0;
+  }
+
+  .address-link {
+    color: inherit;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .address-link:hover,
+  .address-link:focus {
+    color: #404bbf;
+  }
+
+  /* ========================== HEADER ==================================== */
+  /* ============================ MAIN ===================================== */
+
+  /* ======================= NAME ======================== */
+  .section-name {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desktop/desktop-people-office\ 1.jpg);
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+
+  .name {
+    margin-bottom: 48px;
+  }
+
+  @media screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px),
+    screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .section-name {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/desktop/desktop-people-office\ 1@2x.jpg');
+    }
+  }
+
+  /* ======================= BUTTON ============================ */
+  .button {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .button:hover,
+  .button:focus {
+    background-color: #404bbf;
+  }
+
+  /* ====================== CONTENT =========================== */
+  .content-list {
+    display: flex;
+    flex-direction: row;
+    min-width: 264px;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .content-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .content-list-icon {
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    background: #f4f4fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .section-title-third {
+    color: #2e2f42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+
+  .section-paragraph {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    width: 264px;
+  }
+
+  /* ========================= OUR TEAM =========================*/
+
+  .our-team-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-direction: row;
+  }
+
+  .social-list-link:hover,
+  .social-list-link:focus {
+    background-color: #404bbf;
+  }
+
+  /* ====================== PORTFOLIO ========================= */
+
+  .our-portfolio-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    row-gap: 48px;
+  }
+
+  .our-portfolio-item {
+    max-width: 360px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .our-portfolio-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+
+  .img-conteiner {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ======================= OVERLAY ========================== */
+  .overlay-text {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: auto;
+  }
+
+  .our-portfolio-item:hover .overlay-text {
+    transform: translateY(0);
   }
 }
