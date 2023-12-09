@@ -420,7 +420,7 @@ button {
   border-top: none;
 }
 
-.our-portfolio-section-title-third {
+.our-portfolio-subtitle {
   margin-bottom: 8px;
 }
 
@@ -910,9 +910,63 @@ input:checked + .check-label-text > .check-board {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 64px;
+    justify-content: center;
   }
 
   .our-team-list-item {
+    width: 264px;
+  }
+
+  .our-portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .our-portfolio-item {
     flex-basis: calc((100% - 24px) / 2);
+    font-size: 32px;
+    display: flex;
+  }
+
+  .our-portfolio-subtitle {
+    color: #2e2f42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .logotipe-footer {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .footer-conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    margin: 0 auto;
+    padding-left: 108px;
+  }
+
+  .social-media {
+    margin-left: 0;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .form-label-text {
+    text-align: start;
+  }
+
+  .modal-window-icon-conteiner {
+    width: 408px;
+    height: 584px;
   }
 }
