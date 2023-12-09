@@ -60,6 +60,10 @@ button {
   overflow: hidden;
 }
 
+.section-indentation {
+  padding: 96px 0;
+}
+
 /* ============================ HEADER ================================== */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -67,11 +71,6 @@ button {
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
 }
 
 .logotipe {
@@ -750,10 +749,6 @@ input:checked + .check-label-text > .check-board {
 
 /* =============== MOBILE ================ */
 @media screen and (max-width: 767px) {
-  .section-indentation {
-    padding: 96px 0;
-  }
-
   .menu {
     display: none;
   }
@@ -766,6 +761,11 @@ input:checked + .check-label-text > .check-board {
     max-width: 320px;
     margin: 0 auto;
     padding: 0 15px;
+  }
+
+  .top-sidebar {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -799,6 +799,9 @@ input:checked + .check-label-text > .check-board {
   }
 
   /* ========================= NAV ============================  */
+  .page-header {
+    height: 72px;
+  }
 
   .top-sidebar {
     display: flex;
@@ -828,6 +831,11 @@ input:checked + .check-label-text > .check-board {
   .nav-link {
     color: #2e2f42;
     padding: 24px 0;
+    color: #2e2f42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 
   .current {
@@ -865,8 +873,12 @@ input:checked + .check-label-text > .check-board {
   }
 
   .address-link {
-    color: inherit;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #434455;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
   }
 
   .name {
@@ -878,5 +890,29 @@ input:checked + .check-label-text > .check-board {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
+  }
+
+  .content-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+
+  .content-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+    font-size: 32px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .our-team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .our-team-list-item {
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
