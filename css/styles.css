@@ -548,8 +548,6 @@ button {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-window-container .is-open {
@@ -584,12 +582,6 @@ button {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-window-close-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-window-text {
@@ -626,7 +618,6 @@ button {
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-icon {
@@ -634,11 +625,6 @@ button {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-modal-form:focus + .input-icon {
-  fill: #4d5ae5;
 }
 
 .container-comment-form {
@@ -659,7 +645,6 @@ button {
   padding: 8px 16px;
   outline: transparent;
   resize: none;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-conteiner-form {
@@ -685,9 +670,6 @@ input:checked + .check-label-text > .check-board {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -711,7 +693,6 @@ input:checked + .check-label-text > .check-board {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 auto;
 }
 
@@ -1260,4 +1241,67 @@ input:checked + .check-label-text > .check-board {
   }
 
   /*================================ FOOTER ===============================*/
+  /* ======================= MODAL WINDOW ============================== */
+  .modal-window-container {
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-window-icon-conteiner {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .close-button {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .close-button:hover,
+  .close-button:focus {
+    background-color: #404bbf;
+    border: none;
+  }
+
+  .modal-window-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .close-button:hover,
+  .close-button:focus {
+    fill: #ffffff;
+  }
+
+  .input-modal-form {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .input-modal-form:focus {
+    border-color: #4d5ae5;
+  }
+
+  .input-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .input-modal-form:focus + .input-icon {
+    fill: #4d5ae5;
+  }
+
+  .text-comment {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .text-comment:focus {
+    border-color: #4d5ae5;
+  }
+
+  .check-board {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-form-button {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
