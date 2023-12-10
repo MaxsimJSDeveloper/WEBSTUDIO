@@ -755,6 +755,11 @@ input:checked + .check-label-text > .check-board {
     display: none;
   }
 
+  .menu {
+    display: flex;
+    gap: 40px;
+  }
+
   .name {
     font-size: 56px;
     line-height: 1.07;
@@ -831,11 +836,6 @@ input:checked + .check-label-text > .check-board {
     display: flex;
     align-items: center;
     margin-right: 0;
-  }
-
-  .menu {
-    display: flex;
-    gap: 40px;
   }
 
   .nav-list {
@@ -1006,16 +1006,10 @@ input:checked + .check-label-text > .check-board {
   /* ========================== HEADER ====================== */
 
   /* =================== NAV ========================= */
-
   .page-nav {
     display: flex;
     align-items: center;
     margin-right: 332px;
-  }
-
-  .menu {
-    display: flex;
-    gap: 40px;
   }
 
   .nav-link:hover,
