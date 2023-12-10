@@ -1118,15 +1118,8 @@ input:checked + .check-label-text > .check-board {
 
   /* ====================== CONTENT =========================== */
   .content-list {
-    display: flex;
     flex-direction: row;
-    min-width: 264px;
-    flex-wrap: nowrap;
     gap: 24px;
-  }
-
-  .content-list-item {
-    width: calc((100% - 72px) / 4);
   }
 
   .content-list-icon {
@@ -1141,18 +1134,14 @@ input:checked + .check-label-text > .check-board {
   }
 
   .section-title-third {
-    color: #2e2f42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
   }
 
   .section-paragraph {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     width: 264px;
+    font-weight: 400;
   }
 
   /* ========================= OUR TEAM =========================*/
