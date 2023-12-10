@@ -955,10 +955,8 @@ input:checked + .check-label-text > .check-board {
 
   .footer-conteiner {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
-    margin: 0 auto;
     padding-left: 108px;
   }
 
