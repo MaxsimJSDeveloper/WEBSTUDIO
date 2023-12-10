@@ -413,16 +413,7 @@ button {
   background: #2e2f42;
 }
 
-.footer-conteiner {
-  display: flex;
-  flex-direction: column;
-  row-gap: 72px;
-}
-
 /* ====================== LOGOTIPE ========================= */
-.logotipe-div {
-  text-align: center;
-}
 
 .logotipe-footer {
   display: inline-block;
@@ -454,12 +445,6 @@ button {
 }
 
 /* ================= SOCIAL MEDIA ====================== */
-
-.social-media {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
 
 .footer-text {
   color: #fff;
@@ -520,9 +505,6 @@ button {
   letter-spacing: 0.04em;
   padding-left: 16px;
   color: #ffffff;
-
-  opacity: 0.3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .form-input::placeholder {
@@ -771,6 +753,22 @@ input:checked + .check-label-text > .check-board {
     justify-content: center;
     align-items: center;
   }
+
+  .footer-conteiner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+  }
+
+  .logotipe-div {
+    text-align: center;
+  }
+
+  .social-media {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
 }
 
 /* ====================== TABLET AND DECKTOP ================== */
@@ -1002,6 +1000,11 @@ input:checked + .check-label-text > .check-board {
   .overlay-text {
     display: none;
   }
+
+  .form-input {
+    opacity: 0.3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
 }
 /* ============================================= DESCTOP ============================================ */
 @media screen and (min-width: 1158px) {
@@ -1080,7 +1083,7 @@ input:checked + .check-label-text > .check-board {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/desktop/desktop-people-office\ 1.jpg);
+      url(../images/desktop/desktop-people-office.jpg);
     max-width: 1440px;
     padding: 188px 0;
   }
@@ -1098,7 +1101,7 @@ input:checked + .check-label-text > .check-board {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url('../images/desktop/desktop-people-office\ 1@2x.jpg');
+        url('../images/desktop/desktop-people-office@2x.jpg');
     }
   }
 
@@ -1220,9 +1223,10 @@ input:checked + .check-label-text > .check-board {
     padding-bottom: 100px;
   }
 
-  .footer-container {
+  .footer-conteiner {
     display: flex;
     align-items: baseline;
+    flex-direction: row;
   }
 
   /* ====================== LOGOTIPE ========================= */
@@ -1247,7 +1251,6 @@ input:checked + .check-label-text > .check-board {
   }
 
   .footer-text {
-    padding-bottom: 16px;
     color: #fff;
     font-weight: 500;
     line-height: 1.5;
@@ -1290,12 +1293,14 @@ input:checked + .check-label-text > .check-board {
   /* ========================= SUBSCRIBE FORM ==================== */
 
   .container-form-footer {
-    margin-left: 80px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .subscribe-form {
     display: flex;
-    gap: 24px;
+    flex-direction: row;
   }
 
   .form-label-text {
@@ -1303,7 +1308,6 @@ input:checked + .check-label-text > .check-board {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 16px;
   }
 
   .form-input {
