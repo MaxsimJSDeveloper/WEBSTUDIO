@@ -763,6 +763,16 @@ input:checked + .check-label-text > .check-board {
     max-width: 496px;
   }
 
+  .nav-link {
+    display: block;
+    color: #2e2f42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+  }
+
   .current {
     position: relative;
     color: #404bbf;
@@ -833,17 +843,6 @@ input:checked + .check-label-text > .check-board {
   .nav-list {
     color: #2e2f42;
     font-weight: 500;
-    letter-spacing: 0.02em;
-  }
-
-  .nav-link {
-    display: block;
-    color: #2e2f42;
-    padding: 24px 0;
-    color: #2e2f42;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
     letter-spacing: 0.02em;
   }
 
@@ -1019,11 +1018,6 @@ input:checked + .check-label-text > .check-board {
   .menu {
     display: flex;
     gap: 40px;
-  }
-
-  .nav-link {
-    color: #2e2f42;
-    padding: 24px 0;
   }
 
   .nav-link:hover,
