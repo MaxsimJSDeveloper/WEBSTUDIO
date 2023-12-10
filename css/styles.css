@@ -848,6 +848,7 @@ input:checked + .check-label-text > .check-board {
   .page-address {
     display: flex;
     letter-spacing: 0.02em;
+    font-style: normal;
   }
 
   .address-list {
