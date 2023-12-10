@@ -1234,28 +1234,10 @@ input:checked + .check-label-text > .check-board {
     margin-right: 120px;
   }
 
-  .footer-text {
-    color: #fff;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    margin-bottom: 16px;
-  }
-
   /* ================= SOCIAL MEDIA ====================== */
 
   .social-media {
     margin-right: 80px;
-  }
-
-  .footer-social-list {
-    display: flex;
-    gap: 16px;
-  }
-
-  .footer-social-list-item {
-    width: 40px;
-    height: 40px;
   }
 
   .footer-social-list-link {
