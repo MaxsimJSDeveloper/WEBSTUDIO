@@ -960,6 +960,10 @@ input:checked + .check-label-text > .check-board {
     padding-left: 108px;
   }
 
+  .logotipe-div {
+    margin-bottom: 72px;
+  }
+
   .social-media {
     margin-left: 0;
   }
