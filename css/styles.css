@@ -1004,7 +1004,6 @@ input:checked + .check-label-text > .check-board {
   }
 
   /* ========================== HEADER ====================== */
-
   /* =================== NAV ========================= */
   .page-nav {
     display: flex;
@@ -1134,13 +1133,9 @@ input:checked + .check-label-text > .check-board {
   /* ====================== PORTFOLIO ========================= */
 
   .our-portfolio-list {
-    display: flex;
-    align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
-    gap: 24px;
-    row-gap: 48px;
+    gap: 48px 24px;
   }
 
   .our-portfolio-item {
