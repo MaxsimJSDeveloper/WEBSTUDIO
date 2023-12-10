@@ -1226,28 +1226,12 @@ input:checked + .check-label-text > .check-board {
   .footer-conteiner {
     display: flex;
     align-items: baseline;
-    flex-direction: row;
   }
 
   /* ====================== LOGOTIPE ========================= */
 
   .logotipe-div {
     margin-right: 120px;
-  }
-
-  .footer-link {
-    display: inline-block;
-    margin-bottom: 16px;
-  }
-
-  .footer-logotipe-studio {
-    color: #f4f4fd;
-  }
-
-  .footer-paragraph {
-    color: #f4f4fd;
-    letter-spacing: 0.02em;
-    max-width: 264px;
   }
 
   .footer-text {
