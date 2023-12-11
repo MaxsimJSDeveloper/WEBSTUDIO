@@ -335,7 +335,7 @@ button {
 
 .our-team-section-paragraph {
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .social-list {
@@ -717,7 +717,7 @@ input:checked + .check-label-text > .check-board {
 
   .section-name {
     padding: 72px 16px;
-    max-width: 320px;
+    min-width: 320px;
   }
 
   .name {
@@ -933,6 +933,7 @@ input:checked + .check-label-text > .check-board {
   .our-portfolio-item {
     flex-basis: calc((100% - 24px) / 2);
     font-size: 32px;
+    max-width: 356px;
     display: flex;
   }
 
@@ -954,7 +955,7 @@ input:checked + .check-label-text > .check-board {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-    padding-left: 108px;
+    max-width: 582px;
   }
 
   .logotipe-div {
