@@ -60,10 +60,6 @@ button {
   overflow: hidden;
 }
 
-.section-indentation {
-  padding: 96px 0;
-}
-
 /* ============================ HEADER ================================== */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -207,12 +203,6 @@ button {
   display: block;
   margin: 0 auto;
   background-color: #2e2f42;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/mobile/mobile-dark-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -245,19 +235,6 @@ button {
   border-radius: 4px;
   background: #4d5ae5;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
-@media screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px),
-  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-  .section-name {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url('../images/mobile/mobile-dark-bg@2x.jpg');
-  }
 }
 
 /*==================================== CONTENT ==================================*/
@@ -718,6 +695,24 @@ input:checked + .check-label-text > .check-board {
   .section-name {
     padding: 72px 16px;
     min-width: 320px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile/mobile-dark-bg.jpg);
+  }
+
+  @media screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .section-name {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/mobile/mobile-dark-bg@2x.jpg');
+    }
   }
 
   .name {
@@ -752,6 +747,10 @@ input:checked + .check-label-text > .check-board {
 /* ====================== TABLET AND DECKTOP ================== */
 @media screen and (min-width: 768px) {
   .mobile-menu-open-btn {
+    display: none;
+  }
+
+  .mobile-menu {
     display: none;
   }
 
@@ -804,14 +803,6 @@ input:checked + .check-label-text > .check-board {
 
 /* ======================================= TABLET ================================================ */
 @media screen and (min-width: 768px) and (max-width: 1158px) {
-  .mobile-menu-open-btn {
-    display: none;
-  }
-
-  .mobile-menu {
-    display: none;
-  }
-
   .container {
     width: 768px;
     margin-left: auto;
@@ -878,14 +869,8 @@ input:checked + .check-label-text > .check-board {
     padding: 112px 0;
   }
 
-  .name {
-    margin-bottom: 36px;
-    max-width: 496px;
-  }
-
-  @media screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px),
-    screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  @media screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1158px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1158px) {
     .section-name {
       background-image: linear-gradient(
           to bottom,
@@ -894,6 +879,11 @@ input:checked + .check-label-text > .check-board {
         ),
         url('../images/tablet/tablet-dark-bg@2x.jpg');
     }
+  }
+
+  .name {
+    margin-bottom: 36px;
+    max-width: 496px;
   }
 
   /* ============================ CONTENT ================== */
@@ -986,14 +976,14 @@ input:checked + .check-label-text > .check-board {
     opacity: 0.3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
+
+  .section-indentation {
+    padding: 96px 0;
+  }
 }
 
 /* ============================================= DESCTOP ============================================ */
 @media screen and (min-width: 1158px) {
-  .mobile-menu-open-btn {
-    display: none;
-  }
-
   .container {
     width: 1158px;
     margin: 0 auto;
@@ -1062,9 +1052,8 @@ input:checked + .check-label-text > .check-board {
     margin-bottom: 48px;
   }
 
-  @media screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px),
-    screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+    screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     .section-name {
       background-image: linear-gradient(
           to bottom,
