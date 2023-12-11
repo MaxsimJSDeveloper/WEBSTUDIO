@@ -789,6 +789,12 @@ input:checked + .check-label-text > .check-board {
     border-radius: 2px;
   }
 
+  .page-address {
+    display: flex;
+    letter-spacing: 0.02em;
+    font-style: normal;
+  }
+
   .modal-window-icon-conteiner {
     width: 408px;
     height: 584px;
@@ -830,12 +836,6 @@ input:checked + .check-label-text > .check-board {
   }
 
   /* =========================== ADDRESS ======================== */
-  .page-address {
-    display: flex;
-    letter-spacing: 0.02em;
-    font-style: normal;
-  }
-
   .address-list {
     display: flex;
     gap: 12px;
@@ -1002,12 +1002,6 @@ input:checked + .check-label-text > .check-board {
   }
 
   /* ==================== ADDRESS ======================== */
-  .page-address {
-    display: flex;
-    letter-spacing: 0.02em;
-    font-style: normal;
-  }
-
   .address-list {
     display: flex;
     gap: 40px;
