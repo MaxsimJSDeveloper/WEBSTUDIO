@@ -77,7 +77,6 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
 }
 
 .logotipe-studio {
@@ -986,6 +985,10 @@ input:checked + .check-label-text > .check-board {
 
   /* ========================== HEADER ====================== */
   /* =================== NAV ========================= */
+  .logotipe {
+    margin-right: 76px;
+  }
+
   .nav-link:hover,
   .nav-link:focus {
     color: #404bbf;
