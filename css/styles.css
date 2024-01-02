@@ -693,7 +693,7 @@ input:checked + .check-label-text > .check-board {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/mobile/mobile-dark-bg.jpg);
+      url(../images/mobile/mobile-dark-bg.webp);
   }
 
   @media screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -704,7 +704,7 @@ input:checked + .check-label-text > .check-board {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url('../images/mobile/mobile-dark-bg@2x.jpg');
+        url('../images/mobile/mobile-dark-bg@2x.webp');
     }
   }
 
@@ -853,7 +853,7 @@ input:checked + .check-label-text > .check-board {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/tablet/tablet-dark-bg.jpg);
+      url(../images/tablet/tablet-dark-bg.webp);
     min-width: 768px;
     padding: 112px 0;
   }
@@ -866,7 +866,7 @@ input:checked + .check-label-text > .check-board {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url('../images/tablet/tablet-dark-bg@2x.jpg');
+        url('../images/tablet/tablet-dark-bg@2x.webp');
     }
   }
 
@@ -1026,7 +1026,7 @@ input:checked + .check-label-text > .check-board {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/desktop/desktop-people-office.jpg);
+      url(../images/desktop/desktop-people-office.webp);
     max-width: 1440px;
     padding: 188px 0;
   }
@@ -1043,7 +1043,7 @@ input:checked + .check-label-text > .check-board {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url('../images/desktop/desktop-people-office@2x.jpg');
+        url('../images/desktop/desktop-people-office@2x.webp');
     }
   }
 
