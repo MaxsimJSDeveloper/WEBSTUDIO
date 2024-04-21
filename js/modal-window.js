@@ -22,13 +22,12 @@ const form = document.querySelector('.modal-form');
 // Надіслати данні з форми
 form.addEventListener('input', saveFormData);
 
-function saveFormData() {
-  const formData = {
-    name: form.elements.name.value.trim(),
-    phone: form.elements.phone.value.trim(),
-    email: form.elements.email.value.trim(),
-    comment: form.elements.comment.value.trim(),
-  };
+function saveFormData(event) {
+  const formData = {};
+  new FormData(event.currentTarget).forEach((value, key) => {
+    formData[key] = value.trim();
+  });
+
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 }
 
@@ -62,7 +61,7 @@ function handleSubmit(event) {
     phoneValue === '' ||
     commentValue === ''
   ) {
-    alert('Please enter your email and message!');
+    console.log('Please enter your email and message!');
     return;
   }
 
