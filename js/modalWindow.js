@@ -5,7 +5,6 @@ const cssClasses = {
   toggleClass: 'is-open',
 };
 
-// Відкрити закрити форму
 const formMenu = document.querySelector(`.${cssClasses.formButton}`);
 const modal = document.querySelector(`.${cssClasses.modalWindow}`);
 const closeButton = document.querySelector(`.${cssClasses.closeButton}`);
